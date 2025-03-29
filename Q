@@ -1,0 +1,43 @@
+local LIB = loadstring(game:HttpGet('https://raw.githubusercontent.com/HoangNguyenk8/Cutsomers/refs/heads/main/CuathangTom.lua'))()
+local LIB = bm:Window(
+    "Tomhoang hub", 
+    "Bloxfruit", --Desc
+    Enum.KeyCode.RightControl -- KeyCode-Toggle
+)
+Config = {
+    Logo = "rbxassetid://119130179654361",
+    TabColor = Color3.fromRGB(15, 15, 15),
+    StrokeColor = Color3.fromRGB(23, 23, 23),
+    Other = Color3.fromRGB(2, 182, 255),
+    SizeLib = UDim2.new(0, 550, 0, 330)
+}
+local dm = LIB:Tab("Home", "Cac to", "rbxassetid://119130179654361") -- Name/Des/LogoID
+local dd = LIB:Tab("Settings", "Buom nho", "rbxassetid://119130179654361")
+
+dm:Line()
+dm:Label("Time")
+local NAME = {"Method 1", "Method 2", "Method 3"}
+dm:Dropdown("Select Method Farm", NAME, function(value) 
+    if value == "Method 1" then
+
+    elseif value == "Method 2" then
+        
+    end
+end)
+
+dm:Slider("Select Distance Farm", 1, 80, 30, function(value) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = value
+end)
+dm:Toggle("Auto Godhuman", "Tetstsajudskdssfs", "rbxassetid://110698502441921", false, function(value) 
+    if value then
+
+    else
+
+    end
+end)
+dm:Toggle("Auto Cursed Dual Katana", "Auto song kiem", "rbxassetid://85363902539836", false, function(value) 
+    print(value)
+end)
+dm:Button("Copy Link Discord", "nigger", function()
+    print("blap blap blap blep blep blep bluh bluh bluh")
+end)
